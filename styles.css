@@ -1,0 +1,16 @@
+body {
+    background-color: #222222;
+    margin: 0;
+}
+
+.top {
+    width: 100%;
+    color: #ffe798;
+    font-size: 40px;
+    box-shadow: 0px 4px 5px #ffe798;
+}
+
+.top p {
+    margin: 0;
+    padding: 30px 150px;
+}
