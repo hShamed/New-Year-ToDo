@@ -1,0 +1,40 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    color: #ffe798;
+    font-size: 40px;
+    background-color: #222222;
+}
+
+.top p {
+    margin: 0;
+    padding: 30px 150px;
+}
+
+.content {
+    display: flex;
+}
+
+.titleContent {
+    color: #222222;
+    font-size: 24px;
+}
+
+.leftContent {
+    width: 25%;
+    margin: 40px 50px;
+    padding: 30px;
+}
+
+.rightContent {
+    width: 60%;
+    margin: 40px 50px;
+    padding: 30px;
+}

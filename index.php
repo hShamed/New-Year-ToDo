@@ -17,6 +17,7 @@
 
     <div class="content">
         <main class="leftContent">
+            <p class="titleContent">Formulario</p>
             <form action="">            
                 <label for="">Propósito</label>
                 <input type="text">
@@ -28,6 +29,7 @@
             </form>
         </main>
         <aside class="rightContent">
+            <p class="titleContent">Lista</p>
             <table class="objectivesTable">
                 <tr class="objectivesHeader">
                     <th>Propósito</th>
