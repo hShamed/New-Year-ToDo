@@ -1,4 +1,15 @@
+@font-face {
+    font-family: Josefin;
+    src: url(../fonts/JosefinSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Indie;
+    src: url(../fonts/IndieFlower-Regular.ttf);
+}
+
 body {
+    font-family: Josefin;
     background-color: #ffffff;
     margin: 0;
 }
@@ -9,7 +20,7 @@ body {
     height: 200px;
     align-items: center;
     color: #ffe798;
-    font-size: 40px;
+    font-size: 50px;
     background-color: #222222;
 }
 
@@ -24,13 +35,64 @@ body {
 
 .titleContent {
     color: #222222;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .leftContent {
     width: 25%;
     margin: 40px 50px;
     padding: 30px;
+}
+
+.labelForm {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #5e5e5e;
+}
+
+.textForm {
+    width: 99%;
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #000000;
+    border: 0;
+    border-bottom: 1px solid #222222;
+    font-family: Indie;
+}
+
+.textForm:focus {
+    outline: none;
+    border-bottom: 3px solid #ffe798;
+}
+
+.areaForm {
+    width: 94%;
+    height: 220px;
+    padding: 14px;
+    resize: none;
+    border: 1px solid #222222;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-family: Josefin;
+    color: #000000;
+}
+
+.areaForm:focus {
+    outline: none;
+    border: 3px solid #ffe798;
+}
+
+.btnForm {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding-top: 5px;
+    border: 1px solid;
+    background: none;
+    font-family: Josefin;
+    font-size: 22px;
+    color: #222222;
 }
 
 .rightContent {

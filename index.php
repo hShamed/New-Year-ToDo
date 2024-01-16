@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Year</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header class="top">
@@ -17,19 +17,19 @@
 
     <div class="content">
         <main class="leftContent">
-            <p class="titleContent">Formulario</p>
+            <p class="titleContent">Formulario 🖊️</p>
             <form action="">            
-                <label for="">Propósito</label>
-                <input type="text">
+                <label for="" class="labelForm">Propósito</label>
+                <input type="text" class="textForm">
 
-                <label for="">Descripción</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label for=""  class="labelForm">Descripción</label>
+                <textarea name="" id="" cols="30" rows="10" class="areaForm"></textarea>
 
-                <button type="submit">Guardar</button>
+                <button type="submit" class="btnForm">Guardar</button>
             </form>
         </main>
         <aside class="rightContent">
-            <p class="titleContent">Lista</p>
+            <p class="titleContent">Lista 📜</p>
             <table class="objectivesTable">
                 <tr class="objectivesHeader">
                     <th>Propósito</th>
