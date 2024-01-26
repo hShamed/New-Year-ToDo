@@ -31,21 +31,25 @@
         <aside class="rightContent">
             <p class="titleContent">Lista 📜</p>
             <table class="objectivesTable">
-                <tr class="objectivesHeader">
-                    <th>Propósito</th>
-                    <th>Descripción</th>
-                    <th>Fecha de Creación</th>
-                    <th>Acciones</th>
-                </tr>
-                <tr>
-                    <td>Ejercicio</td>
-                    <td>Rutina One Punch</td>
-                    <td>09/01/2024 03:08:50</td>
-                    <td>
-                        <button class="btnEdit"></button>
-                        <button class="btnDelete"></button>
-                    </td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Propósito</th>
+                        <th>Descripción</th>
+                        <th>Fecha de Creación</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ejercicio</td>
+                        <td>Rutina One Punch</td>
+                        <td>09/01/2024 03:08:50</td>
+                        <td>
+                            <button class="btnTable">✏️</button>
+                            <button class="btnTable">🗑️</button>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </aside>
     </div>

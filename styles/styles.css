@@ -40,7 +40,7 @@ body {
 
 .leftContent {
     width: 25%;
-    margin: 40px 50px;
+    margin: 20px 50px;
     padding: 30px;
 }
 
@@ -92,11 +92,49 @@ body {
     background: none;
     font-family: Josefin;
     font-size: 22px;
-    color: #222222;
+    color: #686868;
+}
+
+.btnForm:hover {
+    background-color: #ffdb68;
+    color: #000000;
+    cursor: pointer;
 }
 
 .rightContent {
     width: 60%;
-    margin: 40px 50px;
+    margin: 20px 50px;
     padding: 30px;
+}
+
+.objectivesTable {
+    width: 100%;
+    background-color: #c1694f;
+}
+
+.objectivesTable th {
+    padding: 16px;
+    font-size: 22px;
+    color: #602424;
+    background-color: #ffe798;
+}
+
+.objectivesTable td {
+    background: #fff2d5;
+    padding: 10px;
+}
+
+.btnTable {
+    width: 2em;
+    height: 2em;
+    margin: 0 0.2em;
+    border: 2px solid #c1694f;
+    border-radius: 1em;
+    background-color: #fff;
+}
+
+.btnTable:hover {
+    cursor: pointer;
+    scale: 120%;
+    background-color: #ffe798;
 }
