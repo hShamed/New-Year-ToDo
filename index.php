@@ -1,4 +1,4 @@
-<?php ?>
+<?php include('db.php') ?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -18,14 +18,14 @@
     <div class="content">
         <main class="leftContent">
             <p class="titleContent">Formulario 🖊️</p>
-            <form action="">            
+            <form action="save_task.php" method="POST">            
                 <label for="" class="labelForm">Propósito</label>
-                <input type="text" class="textForm">
+                <input type="text" name="title" class="textForm">
 
                 <label for=""  class="labelForm">Descripción</label>
-                <textarea name="" id="" cols="30" rows="10" class="areaForm"></textarea>
+                <textarea name="description" id="" cols="30" rows="10" class="areaForm"></textarea>
 
-                <button type="submit" class="btnForm">Guardar</button>
+                <button type="submit" class="btnForm" name="save_task">Guardar</button>
             </form>
         </main>
         <aside class="rightContent">
