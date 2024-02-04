@@ -15,19 +15,29 @@
         </p>
     </header>
 
+    <?php if(isset($_SESSION['message'])) {?>
+        
+    <div class="formMessage successMessage <?= $_SESSION['message_type']; ?>" id="message">
+        <p><?= $_SESSION['message']; ?></p>
+        <button onclick="messageClose()">×</button>
+    </div>
+
+    <?php session_unset(); }?>
+
     <div class="content">
         <main class="leftContent">
             <p class="titleContent">Formulario 🖊️</p>
             <form action="save_task.php" method="POST">            
                 <label for="" class="labelForm">Propósito</label>
-                <input type="text" name="title" class="textForm">
+                <input type="text" name="title" class="textForm" placeholder="Aprender un idioma" required>
 
                 <label for=""  class="labelForm">Descripción</label>
-                <textarea name="description" id="" cols="30" rows="10" class="areaForm"></textarea>
+                <textarea name="description" id="" cols="30" rows="10" class="areaForm" placeholder="Estudiar de Lunes a Viernes..." required></textarea>
 
                 <button type="submit" class="btnForm" name="save_task">Guardar</button>
             </form>
         </main>
+
         <aside class="rightContent">
             <p class="titleContent">Lista 📜</p>
             <table class="objectivesTable">
@@ -54,6 +64,6 @@
         </aside>
     </div>
 
-    
+    <script src="scripts/message.js"></script>
 </body>
 </html>

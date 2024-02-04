@@ -29,6 +29,60 @@ body {
     padding: 30px 150px;
 }
 
+.formMessage {
+    width: 70%;
+    height: 55px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    margin: 5px 14%;
+    padding: 0 0.5em;
+    border-radius: 0.5em;
+    align-items: center;
+}
+
+.formMessage p {
+    width: 98%;
+    font-size: 16px;
+}
+
+.formMessage button {
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    border-radius: 1em;
+    font-size: 24px;
+}
+
+.successMessage {
+    background: #daffd9;
+    border: 2px dashed #afcaaf;
+    color: #8fa68f;
+}
+
+.failMessage {
+    background: #ffd9d9;
+    border: 2px dashed #caafaf;
+    color: #a68f8f;
+}
+
+.successMessage button {
+    color: #8fa68f;
+}
+
+.failMessage button {
+    color: #a68f8f;
+}
+
+.successMessage button:active {
+    background: #afcaaf;
+}
+
+.successMessage button:active {
+    background: #caafaf;
+}
+
 .content {
     display: flex;
 }
@@ -40,8 +94,8 @@ body {
 
 .leftContent {
     width: 25%;
-    margin: 20px 50px;
-    padding: 30px;
+    margin: 0 50px;
+    padding: 0 30px;
 }
 
 .labelForm {
@@ -103,8 +157,8 @@ body {
 
 .rightContent {
     width: 60%;
-    margin: 20px 50px;
-    padding: 30px;
+    margin: 0 50px;
+    padding: 0 30px;
 }
 
 .objectivesTable {
