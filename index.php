@@ -82,6 +82,21 @@
         </aside>
     </div>
 
+    <div id="modalDelete">
+        <div class="modal">
+            <div class="modalContainer">
+                <p>¿Estás seguro de <span>ELIMINAR</span> este propósito?</p>
+                
+                <div class="modalContainerButtons">
+                    <form action="delete_task.php" method="POST" class="modalButtons">
+                        <button class="btnModalDelete" type="submit" name="delete">Eliminar</button>
+                    </form>
+                    <button class="modalButtons btnModalCancel" onclick="dismissModal()">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="scripts/message.js"></script>
     <script src="scripts/objective.js"></script>
 </body>

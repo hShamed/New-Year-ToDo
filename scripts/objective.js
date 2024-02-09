@@ -4,6 +4,8 @@ const titleForm = document.getElementById("titleForm");
 const descriptionForm = document.getElementById("descriptionForm");
 const saveBtn = document.getElementById("saveBtn");
 const cancelBtn = document.getElementById("cancelBtn");
+const modalDelete = document.getElementById("modalDelete");
+
 
 function editObjective(id, title, description) {
     objectivesForm.action = "edit_task.php";
@@ -21,4 +23,12 @@ function clearForm() {
     descriptionForm.value = '';
     saveBtn.name = "save_task";
     cancelBtn.style.display = "none";
+}
+
+function deleteObjective() {
+    modalDelete.style.display = "flex";
+}
+
+function dismissModal() {
+    modalDelete.style.display = "none";
 }
