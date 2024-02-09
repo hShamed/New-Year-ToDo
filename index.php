@@ -27,15 +27,18 @@
     <div class="content">
         <main class="leftContent">
             <p class="titleContent">Formulario 🖊️</p>
-            <form action="save_task.php" method="POST">            
-                <label for="" class="labelForm">Propósito</label>
-                <input type="text" name="title" class="textForm" placeholder="Aprender un idioma" required>
+            <form id="objectivesForm" action="save_task.php" method="POST">            
+                <input type="number" name="id" id="idForm" value="" style="display: none;">
+
+                <label for="title" class="labelForm">Propósito</label>
+                <input id="titleForm" type="text" name="title" class="textForm" placeholder="Aprender un idioma" required>
 
                 <label for=""  class="labelForm">Descripción</label>
-                <textarea name="description" id="" cols="30" rows="10" class="areaForm" placeholder="Estudiar de Lunes a Viernes..." required></textarea>
+                <textarea name="description" id="descriptionForm" cols="30" rows="10" class="areaForm" placeholder="Estudiar de Lunes a Viernes..." required></textarea>
 
-                <button type="submit" class="btnForm" name="save_task">Guardar</button>
+                <button id="saveBtn" type="submit" class="btnForm" name="save_task">Guardar</button>
             </form>
+                <button id="cancelBtn" class="btnForm" onclick="clearForm()">Cancelar</button>
         </main>
 
         <aside class="rightContent">
@@ -50,20 +53,36 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Ejercicio</td>
-                        <td>Rutina One Punch</td>
-                        <td>09/01/2024 03:08:50</td>
-                        <td>
-                            <button class="btnTable">✏️</button>
-                            <button class="btnTable">🗑️</button>
-                        </td>
-                    </tr>
+                    <?php
+                        $query = "SELECT * FROM objective";
+                        $result_objectives = mysqli_query($conn, $query);
+
+                        while($row = mysqli_fetch_array($result_objectives)) {
+                    ?>
+
+                            <tr>
+                                <td><?php echo $row['title']; ?></td>
+                                <td><?php echo $row['description']; ?></td>
+                                <td>
+                                    <?php
+                                        $originalDate = date_create($row['created_at']);
+
+                                        echo date_format($originalDate, 'd-m-Y g:i A'); 
+                                    ?>
+                                </td>
+                                <td>
+                                    <button class="btnTable" onclick="editObjective('<?php echo $row['id']; ?>', '<?php echo $row['title']; ?>', '<?php echo $row['description']; ?>')">✏️</button>
+                                    <button class="btnTable" onclick="deleteObjective()">🗑️</button>
+                                </td>
+                            </tr>
+
+                    <?php } ?>
                 </tbody>
             </table>
         </aside>
     </div>
 
     <script src="scripts/message.js"></script>
+    <script src="scripts/objective.js"></script>
 </body>
 </html>
