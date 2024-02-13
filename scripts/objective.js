@@ -4,6 +4,7 @@ const titleForm = document.getElementById("titleForm");
 const descriptionForm = document.getElementById("descriptionForm");
 const saveBtn = document.getElementById("saveBtn");
 const cancelBtn = document.getElementById("cancelBtn");
+const deleteBtn = document.getElementById("deleteBtn");
 const modalDelete = document.getElementById("modalDelete");
 
 
@@ -25,8 +26,9 @@ function clearForm() {
     cancelBtn.style.display = "none";
 }
 
-function deleteObjective() {
+function openModal(id) {
     modalDelete.style.display = "flex";
+    deleteBtn.href = "delete_task.php?id=" + id;
 }
 
 function dismissModal() {

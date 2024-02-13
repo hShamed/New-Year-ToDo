@@ -72,7 +72,7 @@
                                 </td>
                                 <td>
                                     <button class="btnTable" onclick="editObjective('<?php echo $row['id']; ?>', '<?php echo $row['title']; ?>', '<?php echo $row['description']; ?>')">✏️</button>
-                                    <button class="btnTable" onclick="deleteObjective()">🗑️</button>
+                                    <button class="btnTable" onclick="openModal('<?php echo $row['id']; ?>')">🗑️</button>
                                 </td>
                             </tr>
 
@@ -88,9 +88,7 @@
                 <p>¿Estás seguro de <span>ELIMINAR</span> este propósito?</p>
                 
                 <div class="modalContainerButtons">
-                    <form action="delete_task.php" method="POST" class="modalButtons">
-                        <button class="btnModalDelete" type="submit" name="delete">Eliminar</button>
-                    </form>
+                    <a id="deleteBtn" class="modalButtons btnModalDelete" href="#">Eliminar</a>
                     <button class="modalButtons btnModalCancel" onclick="dismissModal()">Cancelar</button>
                 </div>
             </div>
