@@ -276,3 +276,46 @@ body {
     background: #e1e1e1;
     cursor: pointer;
 }
+
+
+/*
+    Resposive View 
+*/
+
+@media screen and (max-width: 970px) {
+
+    .top {
+        height: 180px;
+        font-size: 40px;
+    }
+
+    .top p {
+        margin: auto;
+        padding: 0;
+    }
+    
+    .content {
+        display: block;
+    }
+
+    .leftContent {
+        width: auto;
+        margin: 70px 50px;
+    }
+
+    .rightContent {
+        width: auto;
+        margin: 60px 50px;
+    }
+
+    .objectivesTable {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .modal {
+        width: 70%;
+        height: 165px;
+    }
+}
